@@ -20,4 +20,21 @@ in this directory.  The name of the file must be placed in config.py.  The conte
 with the following content - please note that your newsapi key should be enclosed by quotation marks:
 api_key = your_newsapi_key_here
 
+Where the script initiates (__name__ == "main") the following parameters can be changed to retrieve data:
+    keywords
+    keywords_in_title
+    start_date                      must have the format 'yyyy-mm-dd'
+    end_date                        must have the format 'yyyy-mm-dd'
+
+Either keywords or keywords_in_title must be present.  The script doesn't work otherwise.  keywords_in_title specifies
+search keywords in article titles only.  keywords specifies search keywords in article titles or contents.  Other
+specifications for these categories (this is a quote from https://newsapi.org/docs/endpoints/everything):
+
+    Surround phrases with quotes (") for exact match.
+    Prepend words or phrases that must appear with a + symbol. Eg: +bitcoin
+    Prepend words that must not appear with a - symbol. Eg: -bitcoin
+    Alternatively you can use the AND / OR / NOT keywords, and optionally group these with parenthesis. Eg: crypto AND (ethereum OR litecoin) NOT bitcoin.
+    The complete value of the keyword field must be URL-encoded
+
+
 For licensing please check license.txt.
