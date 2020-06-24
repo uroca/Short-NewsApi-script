@@ -3,6 +3,11 @@ import json
 import os
 from config import *
 
+'''
+Created in python 3.7.7
+pip dependencies list present in requirements.txt
+'''
+
 amp = '&'
 new_line_string: str = "\n"
 embedded_quote: str = '"'
