@@ -16,8 +16,8 @@ requirements by using the following pip command in this directory:
 pip install -r requirements.txt
 
 You need to obtain your own newsapi key to access this service. The newsapi key must be stored in a separate file
-in this directory.  The name of the file must be placed in config.py.  The contents of the file should include a line
-with the following content - please note that your newsapi key should be enclosed by quotation marks:
+in this directory.  The name of the file must be config.py.  The contents of the config.py file should include a line
+with the following content - please note that your newsapi key MUST be enclosed by quotation marks:
 api_key = your_newsapi_key_here
 
 Where the script initiates (__name__ == "main") the following parameters can be changed to retrieve data:
